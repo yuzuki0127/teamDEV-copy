@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+}
+header{
+    color:white;
+    background-color: rgba(46, 121, 186, 1);
+    padding: 1.5rem 0 .5rem 0;
+    width: 100%;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    z-index: 10000;
+    height: 6rem;
+}
+
+.header-box{
+    align-items: center;
+    align-content: center;
+}
+.header-company{
+    font-size: 350%;
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    text-shadow: 1px 2px 3px black;
+}
+.header-logo{
+    /* display: flex;
+    justify-content: end; */
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    align-items: center;
+    margin-right: 10px;
+}
+/* company-logoがhtmlで見つからなかったからクラスにheader付けてない */
+.company-logo{
+    display: flex;
+}
+
+.header-logo-img{
+    width:13rem
+}
+
+.header-nav-box{
+    margin-bottom: 0;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav-list{
+    list-style: none;
+    display: flex;
+}
+.header-list{
+    padding-right: 8rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+.header-inquiry{
+    display: flex;
+    margin-right: 10px;
+    padding-right: 3rem;
+    align-items: center;
+}

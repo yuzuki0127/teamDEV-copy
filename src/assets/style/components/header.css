@@ -1,0 +1,65 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(46, 121, 186, 1);
+    height: 7rem;
+    z-index: 10000;
+    box-shadow: .1em .12em .1em rgba(10, 10, 10, 0.3),
+        0 .5em 1em -0.2em rgba(10, 10, 10, 0.1);
+}
+
+.header-box{
+    color:white;
+    margin-top: 1rem;
+}
+.header-title{
+    text-align: center;
+}
+.header-company{
+    font-size: 350%;
+    text-align: center;
+    text-shadow: 1px 2px 3px black;
+}
+.header-logo{
+    position: absolute;
+    top: 20%;
+    right: 2%;
+}
+
+.company-logo{
+    display: flex;
+}
+
+.header-logo-img{
+    width:13rem
+}
+
+.header-nav-box{
+    margin-bottom: 0;
+}
+.header-nav{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-top: 1rem;
+}
+
+.header-nav-list{
+    padding-left: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.header-list{
+    padding-right: 8rem;
+    font-size: 1rem;
+    color: #fff;
+}
+.header-inquiry{
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+}
+.header-button {
+    display: none;
+}

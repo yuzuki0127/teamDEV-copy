@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>エージェンシー情報登録</title>
+        <link rel="stylesheet" href="../style/reset.css" />
+        <link rel="stylesheet" href="../style/header.css">
+        <link rel="stylesheet" href="../style/sp/style.css">
+        <link rel="stylesheet" href="../style/agencyRegister.css">
+        <link rel="stylesheet" href="../../../node_modules/@splidejs/splide/dist/css/splide.min.css">
+        <script src="../script/script.js" defer></script>
+        <script src="../../../node_modules/@splidejs/splide/dist/js/splide.min.js" defer></script>
+    </head>
+
+    <body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-box">
+            <div class="header-title">
+                <!-- <div></div> -->
+                <div class="header-company">CRAFT</div>
+            </div>
+            <figure class="header-logo">
+                <img src="./assets/img/boozer_logo-black.png.png" alt="" class="header-logo-img">
+            </figure>
+        </div>
+        <div class="header-nav">
+            <div class="">
+                <nav class="header-nav-box">
+                    <ul class="header-nav-list">
+                        <li class="header-list"><a href="">craftとは</a></li>
+                        <li class="header-list"><a href="">就活支援</a></li>
+                        <li class="header-list"><a href="">業界研究</a></li>
+                        <li class="header-list"><a href="">就活エージェンシー比較</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-inquiry">
+                <nav>
+                    <div>お問い合わせ</div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- エージェンシー情報登録フォーム -->
+    <main>
+        <section class="agency-regi">
+            <div class="agency-regiContainer">
+                <div class="agency-regiTitle">
+                    <p>登録情報編集</p>
+                </div>
+                <form action="">
+                <div class="agency-regiForm">
+                    <div class="agency-regiFormContainer">
+                    <div class="agency-regiFormInner">
+                    <label class="agency-regiFormText">企業名</label>
+                    <input type="text" name="companyName" class="agency-regiFormInput agency-regiFormName">
+                    </div>
+            
+                    <div class="agency-regiFormInner">
+                    <label>企業の強み</label>
+                    <input type="text"name="companyStrength" class="agency-regiFormInput agency-regiFormStrength">
+                    </div>
+                </div>
+                    <div class="agency-regiFormInner2">
+                        <ul class="narrow-List">
+                            <li class="narrow-Item">
+                                <p class="narrow-eachTitle">得意企業</p>
+                                <div class="narrow-eachList">
+                                    <button class="narrow-eachBtn">大企業</button>
+                                    <button class="narrow-eachBtn">中小</button>
+                                    <button class="narrow-eachBtn">ベンチャー</button>
+                                </div>
+                            </li>
+                            <li class="narrow-Item">
+                                <p class="narrow-eachTitle">業界</p>
+                                <div class="narrow-eachList">
+                                    <button class="narrow-eachBtn">総合型</button>
+                                    <button class="narrow-eachBtn">IT特化</button>
+                                    <button class="narrow-eachBtn">医学部特化</button>
+                                </div>
+                            </li>
+                            <li class="narrow-Item">
+                                <p class="narrow-eachTitle">主な地方</p>
+                                <div class="narrow-eachList">
+                                    <button class="narrow-eachBtn">首都圏</button>
+                                    <button class="narrow-eachBtn">北海道・東北</button>
+                                    <button class="narrow-eachBtn">関東</button>
+                                    <button class="narrow-eachBtn">中部・北陸</button>
+                                    <button class="narrow-eachBtn">関西</button>
+                                    <button class="narrow-eachBtn">中国・四国</button>
+                                    <button class="narrow-eachBtn">九州・沖縄</button>
+                                </div>
+                            </li>
+                            <li class="narrow-Item">
+                                <p class="narrow-eachTitle">その他</p>
+                                <div class="narrow-eachList">
+                                    <button class="narrow-eachBtn">実地面談</button>
+                                    <button class="narrow-eachBtn">非公開求人</button>
+                                    <button class="narrow-eachBtn">インターン紹介</button>
+                                    <button class="narrow-eachBtn">逆スカウト</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="agency-regiFormContainer">
+                    <div class="agency-regiFormInner">
+                    <label>得意な企業規模</label>
+                    <input type="range" name="company" min="1" max="5" class="agency-regiFormInput agency-regiFormRange">
+                    </div>
+                    <div class="agency-regiFormInner">
+                    <label>サポートのスピード感</label>
+                    <input type="range" name="support" min="1" max="5" class="agency-regiFormInput agency-regiFormRange">
+                    </div>
+                    <div class="agency-regiFormInner">
+                    <label>学生の独自コミュニティ</label>
+                    <input type="range" name="community" min="1" max="5" class="agency-regiFormInput agency-regiFormRange">
+                    </div>
+                    <div class="agency-regiFormInner">
+                    <label>住所</label>
+                    <input type="text" name="address" class="agency-regiFormInput agency-regiFormAddress">
+                    </div>
+                    <div class="agency-regiFormInner">
+                    <label>対応可能時間</label>
+                    <input type="text" name="time" class="agency-regiFormInput agency-regiFormTime">
+                    </div>
+                    <div class="agency-regiFormInner">
+                    <label>特徴</label>
+                    <input type="text" name="point" class="agency-regiFormInput agency-regiFormPoint">
+                </div>
+                <div class="agency-regiFormInner">
+                    <label>備考</label>
+                    <input type="text" name="free" class="agency-regiFormInput agency-regiFormFree">
+                </div>
+        </div>
+        </div>
+        </form>
+        </div>
+        
+        <div class="agency-regiFormSubmit1">
+                <div class="agency-regiFormSubmit">
+                    <button class="agency-regiFormSubmitButton">登録</button>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+</body>

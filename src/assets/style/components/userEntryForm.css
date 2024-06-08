@@ -1,0 +1,70 @@
+.user-entryContainer{
+    margin-top: 7rem;
+}
+
+.user-entryTitle{
+    font-size: 3rem;
+    text-align: center;
+}
+.user-entryFormInput{
+    appearance: revert;  /* フォーム要素のスタイルを初期化 */
+    border: .05em solid #ccc;
+}
+.user-entryForm{
+    display: flex;
+    flex-direction: column;
+}
+.user-entryFormContainer{
+/* display: flex;
+flex-direction: column; 
+align-items: center; */
+width: 30%;
+margin: 0 auto;
+font-size: 1.3rem;
+}
+.user-entryFormGenderContainer{
+    margin-top: .3rem;
+    display: flex;
+    /* gap: .5rem; */
+}
+.user-entryFormContextOfUseContainer{
+    display: flex;
+    margin-top: .3rem;
+}
+
+.user-entryFormRadio1{
+    width: 1rem;
+    height: 1rem;
+    margin-top: .2rem;
+    vertical-align: middle;
+}
+.user-entryFormRadio2{
+    width: 1rem;
+    height: 1rem;
+    vertical-align: middle;
+}
+.user-entryFormInner{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    margin: 1.5rem;
+}
+.user-entryFormSubmit1{
+    width: 40%;
+    margin: 0 auto; 
+}
+.user-entryFormSubmit{
+    /* width: 40%;
+    margin: 0 auto; */
+    display: flex;
+    justify-content: flex-end;
+}
+.user-entryFormSubmitButton{
+    background-color: #3792D5;
+    color: #FFFFFF;
+    width: 5rem;
+    height: 3rem;
+    text-align: center;
+    margin: 3rem 0 3rem;
+    border-radius: 5%;
+    font-size: 1.2rem;
+}

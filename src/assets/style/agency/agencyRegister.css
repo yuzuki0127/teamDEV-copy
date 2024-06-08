@@ -1,0 +1,215 @@
+.agency-regiContainer{
+    margin-top: 8rem;
+}
+
+.agency-regiTitle{
+    margin-top: 4rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.agency-regiFormInput{
+    appearance: revert;  /* フォーム要素のスタイルを初期化 */
+    border: .05em solid #ccc;
+}
+.agency-regiForm{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 1.8rem; */
+}
+.agency-regiFormContainer{
+width: 30%;
+margin: 0 auto;
+font-size: 1.3rem;
+}
+.agency-regiFormContainer2 {
+    width: 45%;
+    margin: 0 auto;
+    font-size: 1.3rem;
+}
+.agency-regiFormInner{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    margin: 1.5em;
+}
+.agency-regiFormInner2{
+    width: 35%;
+    margin: 0 auto;
+}
+.agency-regiFormInner3{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    margin: 1.5em auto 1.5em auto;
+    gap: .5em;
+    width: 60%;
+}
+.agency-rangeItem {
+    display: flex;
+    align-items: center;
+}
+.agency-regiFormRange::-webkit-slider-runnable-track {
+    background: #ccc;
+    border-radius: 5em;
+    height: 50%;
+}
+.agency-regiFormRange::-webkit-slider-thumb  {
+    margin-top: -0.5%;
+}
+
+.narrow-info {
+    background-color: #fff;
+    border-radius: 1.7em;
+    margin: 0 .5em .5em .5em;
+    padding: 2em 1.5em 1em 1.5em;
+    box-shadow: .2em .2em .4em rgb(182, 182, 182);
+}
+.narrow-fig {
+    font-size: 1.5rem;
+}
+.narrow-figure {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: .5em 1.7em .5em .5em;
+    text-align: end;
+}
+.narrow-searchCon {
+    font-size: 1.5em;
+    text-align: center;
+}
+.narrow-clearButton {
+    display: flex;
+    justify-content: center;
+    padding-top: .5em;
+}
+.narrow-clearBtn {
+    background-color: #F5F5F5;
+    border-radius: 9999px;
+    padding: .3em 1em .3em 1em;
+    color: rgb(90, 90, 90);
+    font-size: 1.1rem;
+    box-shadow: .1em .1em .1em gray;
+}
+
+.narrow-displayDesc {
+    font-size: 1.6em;
+    padding: 1em 0 1em 0;
+}
+.narrow-List {
+    padding: 0 1em 0 1.5em;
+    grid-template-columns: repeat(2,1fr);
+    display: grid;
+}
+.narrow-Item.agency-regiNarrowItem{
+    margin: 1.3em 0 0 .5em;
+    /* display: grid; */
+}
+
+.narrow-eachTitle {
+    font-size: 1.7em;
+    text-shadow: .08em .1em .1em rgb(200, 200, 200);
+}
+.narrow-eachList.agency-regiNarrow{
+    padding: 2em 0 2em 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 1em; */
+}
+/* .narrow-eachBtn {
+    color: #fff;
+    background-color: #3692D5;
+    border-radius: 1.3em;
+    padding: .4em 1em;
+    box-shadow: .1em .12em .1em rgb(182, 182, 182);
+    font-size: 1.1em;
+    margin-left: 1.2em;
+    text-shadow: .08em .1em .1em gray;
+}
+.narrow-NOTeachBtn {
+    color: #3692D5;
+    background-color: #fff;
+    border: #3692D5 solid .15em;
+    text-shadow: none;
+    font-weight: bolder;
+} */
+.featureTitle.agency-regiFeatureTitle{
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    padding: .3em 2em; /* 調整 */
+    width: auto; /* 調整 */
+    color: #353535; /* 文字色を黒に変更 */
+    font-size: 1.4em;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.featureTitle::before {
+    background: #fff;
+    border: .05em solid #ccc;
+    border-radius: .2em;
+    content: '';
+    display: block;
+    height: 1.5em;
+    left: .2em;
+    top: 5%;
+    position: absolute;
+    width: 1.5em;
+}
+
+.featureTitle::after {
+    border-right: .5em solid #3792D5;
+    border-bottom: .2em solid #3792D5;
+    content: '';
+    display: block;
+    height: 1.5em;
+    left: .6em;
+    opacity: 0;
+    position: absolute;
+    top: 2%;
+    transform: rotate(45deg);
+    width: 1em;
+}
+
+input[type=checkbox]:checked + .featureTitle::before {
+    border-color: #666;
+}
+
+input[type=checkbox]:checked + .featureTitle::after {
+    opacity: 1;
+}
+.regi-datalist{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    /* writing-mode: vertical-lr; */
+    width: 100%;
+}
+
+.agency-regiFormDetail{
+    height: 4rem;
+}
+.agency-regiFormSubmit1{
+    width: 40%;
+    margin: 0 auto; 
+}
+.agency-regiFormSubmit{
+    display: flex;
+    justify-content: flex-end;
+}
+.agency-regiFormSubmitButton{
+    background-color: #3792D5;
+    color: #FFFFFF;
+    width: 5rem;
+    height: 3rem;
+    text-align: center;
+    margin: 3rem 0 3rem;
+    border-radius: 5%;
+    font-size: 1.2rem;
+}
+
+.craftContainer{
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: 1.7fr 8.3fr;
+    background-color: #f5f5f5;
+    gap: 2em;
+}

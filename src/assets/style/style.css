@@ -1,0 +1,326 @@
+/* ゆづき */
+/* ヒーロースライド */
+.hero-section {
+    /* margin-left: 5%; */
+    margin-top: 7rem;
+}
+.splide__slide {
+    overflow: hidden;
+    box-shadow: .1em .12em .1em rgba(10, 10, 10, .3),
+    0 .5em 1em -0.2em rgba(10, 10, 10, 0.1);
+}
+/* .splide__slide:hover {
+    transform: scale(1.1);
+} */
+.hero-sp {
+    display: none;
+}
+.hero-No1 {
+    position: relative;
+}
+.hero-No3 {
+    position: relative;
+}
+.hero-infoBtn {
+    position: absolute;
+    right: 20%;
+    bottom: 7%;
+    color: #fff;
+    font-size: 1.6rem;
+    background-color: #3692D5;
+    border-radius: .8em;
+    padding: .3em 1.5em;
+    box-shadow: .1em .12em .1em rgba(10, 10, 10, 0.3),
+        0 .5em 1em -0.2em rgba(10, 10, 10, 0.1);
+    text-shadow: .08em .1em .1em gray;
+}
+.hero-newList {
+    position: absolute;
+    left: 20%;
+    top: 55%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    line-height: 2em;
+}
+.hero-newItem {
+    border-bottom: .1em #FA9F31 solid;
+}
+
+/* 矢印のクリック範囲など */
+div>.splide__arrow {
+    background-color: transparent; /* ボタンの背景を透明にする */
+    height: 50px;
+    transition: .2s;
+    width: 50px;
+  }
+  /* 矢印共通のスタイル */
+  .splide__arrow::before {
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 0;
+    content: "";
+    height: 7em;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    width: 7em;
+  }
+  /* 前の矢印 */
+  .splide__arrow--prev::before {
+    background-image: url(../img/arrow-left.png);
+    transform: translateX(65%);
+  }
+  /* 次の矢印 */
+  .splide__arrow--next::before {
+    background-image: url(../img/arrow-left.png);
+    transform: scaleX(-1) translateX(130%);
+  }
+  /* 次のスライドが無い場合の矢印
+  .button:disabled::before {
+    opacity: .5;
+  } */
+  /* スライドのサイズ調整 */
+  /* .splide__slide img {
+    height: auto;
+    width: 100%;
+  } */
+
+/* えり ユーザーホーム*/
+.keepbutton{
+    background-color:rgba(37, 129, 196, 1);
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    font-size: 1rem;
+    right: 5%;
+    bottom: 5%;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 1em;
+    z-index: 10000;
+    box-shadow: .1em .12em .3em rgba(10, 10, 10, 0.5),
+        .1em .5em 1em -0.2em rgba(10, 10, 10, 0.5);
+    padding: 1em .7em 1em .7em;
+    font-size: 1.5em;
+}
+
+/* エージェンシー情報全体 */
+.agency-info {
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+/* 絞り込み */
+.narrow-set {
+    order: 2;
+}
+.narrowList {
+    background-color: #F5F5F5;
+    margin-top: 5em;
+    width: 67%;
+    border-radius: .5em;
+    padding: 2.5em;
+}
+
+.narrow-info {
+    background-color: #fff;
+    border-radius: 1.7em;
+    margin: 0 .5em .5em .5em;
+    padding: 2em 1.5em 1em 1.5em;
+    box-shadow: .2em .2em .4em rgb(182, 182, 182);
+}
+.narrow-fig {
+    font-size: 1.5rem;
+}
+.narrow-figure {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: .5em 1.7em .5em .5em;
+    text-align: end;
+}
+.narrow-searchCon {
+    font-size: 1.5em;
+    text-align: center;
+}
+.narrow-clearButton {
+    display: flex;
+    justify-content: center;
+    padding-top: .5em;
+}
+.narrow-clearBtn {
+    background-color: #F5F5F5;
+    border-radius: 9999px;
+    padding: .3em 1em .3em 1em;
+    color: rgb(90, 90, 90);
+    font-size: 1.1rem;
+    box-shadow: .1em .1em .1em gray;
+}
+
+.narrow-displayDesc {
+    font-size: 1.6em;
+    padding: 1em 0 1em 0;
+}
+.narrow-List {
+    padding: 0 1em 0 1.5em;
+}
+.narrow-Item {
+    margin: 1.3em 0 0 .5em;
+}
+
+.narrow-eachTitle {
+    font-size: 1.7em;
+    text-shadow: .08em .1em .1em rgb(200, 200, 200);
+}
+.narrow-eachList {
+    padding: 2em 0 2em 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.narrow-eachBtn {
+    color: #fff;
+    background-color: #3692D5;
+    border-radius: 1.3em;
+    padding: .4em 1em;
+    box-shadow: .1em .12em .1em rgb(182, 182, 182);
+    font-size: 1.2em;
+    margin-left: 1.2em;
+    text-shadow: .08em .1em .1em gray;
+}
+.narrow-NOTeachBtn {
+    color: #3692D5;
+    background-color: #fff;
+    border: #3692D5 solid .15em;
+    text-shadow: none;
+    font-weight: bolder;
+}
+
+.narrow-search {
+    display: flex;
+    justify-content: end;
+}
+.narrow-searchBtn {
+    color: #fff;
+    background-color: #FA9F31;
+    border-radius: .5em;
+    padding: .4em 1em;
+    box-shadow: .1em .12em .1em rgb(182, 182, 182);
+    font-size: 1.2em;
+    text-shadow: .08em .1em .1em gray;
+    margin-right: 2em;
+}
+
+/* エージェンシー情報アイテム */
+.agency-infoList{
+    order: 1;
+    z-index: 0;
+}
+.agency-infoItem {
+    background-color: #fff;
+    width: 68%;
+    margin: 5em 5em 0 auto;
+    border-radius: 1em;
+    padding: 3% 2% 2% 4%;
+    border-top: .5em #3692D5 solid;
+    border-bottom: 5em solid rgba(250, 159, 49, 0.4);
+    position: relative;
+    box-shadow: .3em .3em .5em gray;
+    z-index: 0;
+    /* box-shadow: 0px 8px 16px -2px rgba(10, 10, 10, 0.1),
+    5px 5px 20px 13px rgba(10, 10, 10, 0.02); */
+}
+
+.agency-easyDesc {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+}
+.agency-infoImg {
+    box-shadow: .2em .2em .3em lightgray;
+    border-radius: .6em;
+    overflow: hidden;
+    margin-bottom: .3em;
+    height: 15em;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+}
+.agency-descItem {
+    padding-top: 5%;
+}
+
+.agency-Name {
+    font-size: 1.7rem;
+    padding-left: 10%;
+    text-shadow: .08em .1em .1em lightgray;
+}
+.agency-firstDesc {
+    font-size: 1.7rem;
+    font-weight: bolder;
+    padding-top: .7em;
+    text-align: center;
+}
+.agency-infoButton {
+    display: flex;
+    justify-content: end;
+    margin-right: .5em;
+}
+.agency-infoBtn {
+    color: #fff;
+    font-size: 1.2rem;
+    background-color: #45A66C;
+    border-radius: .8em;
+    padding: .3em 1.2em;
+    box-shadow: .1em .12em .1em rgb(182, 182, 182);
+    text-shadow: .08em .1em .1em gray;
+}
+
+.agency-featureList {
+    margin-top: .8em;
+    margin-bottom: 1.3em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+.agency-featureItem {
+    border: .1em solid #3692D5;
+    border-radius: 1.3em;
+    padding: .3em .9em;
+    box-shadow: .08em .1em .1em rgb(182, 182, 182);
+}
+.agency-5stepList {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 27% 1fr;
+}
+.agency-5stepItem {
+    display: grid;
+    grid-template-columns: 25% 1fr 25%;
+}
+.agency-5stepDesc {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.agency-keepButton {
+    position: absolute;
+    right: 5%;
+    bottom: -11%;
+}
+.agency-keepButton.popup-opened{
+    bottom: -8%;
+}
+.agency-keepBtn {
+    color: #fff;
+    font-size: 1.2rem;
+    background-color: #3692D5;
+    border-radius: .8em;
+    padding: .5em;
+    box-shadow: .1em .15em .1em gray;
+    text-shadow: .08em .1em .1em gray;
+}
+/* えり */
+
+
+/* ゆい */

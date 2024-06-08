@@ -1,0 +1,49 @@
+.hidden{
+    display: none;
+}
+.popup {
+    position: fixed;
+    /* position: relative; */
+    top: 75%;
+    left: 75%;
+    transform: translate(-50%, -50%); 
+    background-color: #F5F5F5;
+    /* height: px;
+    width: px; */
+    /* padding: 40px; */
+    border-radius: .5rem;
+    box-shadow: 0 0 .625rem rgba(0,0,0,0.25);
+    border: solid .05rem black;
+    font-size: 1rem;
+    padding: .5rem 0;
+}
+.popup-item{
+    margin: 2rem;
+}
+.closeButton {
+        appearance: auto; 
+        display: block;
+        position: absolute;
+        top: .5rem;
+        right: .5rem;
+        width: 2rem;
+        height: 2rem;
+        border: 0.125rem solid #333; /* 枠の調整 */
+        border-radius: 50%;  /* 丸みの度合い */
+        background:#FFF; /* ボタンの背景色 */
+    }
+    .closeButton::before, .closeButton::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: .1875rem; /* 棒の幅（太さ） */
+        height: 1.375rem; /* 棒の高さ */
+        background: #333; /* バツ印の色 */
+    }
+    .closeButton::before {
+        transform: translate(-50%,-50%) rotate(45deg);
+    }
+    .closeButton::after {
+        transform: translate(-50%,-50%) rotate(-45deg);
+    }

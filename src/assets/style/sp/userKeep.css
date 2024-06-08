@@ -1,0 +1,40 @@
+@media (max-width: 768px) {
+    /* ゆづき */
+    /* 全体要素 */
+    body {
+        font-size: 0.6rem;
+    }
+    /* エージェンシー情報全体 */
+    .agency-info {
+        display: block;
+    }
+    .agency-infoList {
+        margin: 1em auto 0 auto;
+        width: 100%;
+    }
+    .agency-infoTitle {
+        padding: 1em;
+    }
+    /* エージェンシー情報アイテム */
+    .agency-infoItem {
+        width: 90%;
+        margin: 5%;
+    }
+    .agency-Name {
+        font-size: 1.2rem;
+    }
+    .agency-firstDesc {
+        font-size: 1.2rem;
+    }
+    .agency-infoBtn {
+        font-size: .8rem;
+    }
+    .agency-keepButton {
+        right: 5%;
+        bottom: -13.5%;
+    }
+    .agency-rejectBtn {
+        font-size: 1rem;
+        padding: .5em;
+    }
+}

@@ -1,0 +1,63 @@
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.login-title{
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem;
+}
+
+.Container{
+    margin-top: 8rem;
+    display: grid;
+    justify-content: center;
+}
+.form-control{
+    width: 15rem;
+    height: 2rem;
+    margin-top: 2rem;
+    border: .05rem solid black;
+    padding-left: .5rem;
+}
+/* .agencyLogin-form{
+    padding-top: 170px;
+} */
+.craft-formSubmitButton{
+    /* padding-top: 20px; */
+    width: 7rem;
+    height: 2rem;
+    align-items: center;
+    appearance: auto;
+    background-color: #efefef;
+    border: .05rem solid black;
+    text-align: center;
+}
+
+.craft-formSubmitContainer{
+display: grid;
+justify-content: center;
+/* align-content: center; */
+margin-top: 2rem;
+}
+.craft-regiFormSubmit{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+/* .agencyLogin-signUp{
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.agencyLogin-signUp-box{
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+} */
+.signup-lead{
+    text-decoration: underline;
+}

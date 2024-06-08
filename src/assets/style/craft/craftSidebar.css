@@ -1,0 +1,33 @@
+.craft-sidebar{
+    display: grid;
+    background-color: #fff;
+    height: 100%;
+    padding:2rem .5rem 0 1rem;
+}
+.craft-sidebarContainer{
+    display: grid;
+    grid-template-rows: repeat(3,2rem);
+    gap:3rem;
+}
+.craft-sidebarItem{
+    font-size: 1.3em;
+}
+.current{
+    background-color: rgba(46, 121, 186, .3);
+    padding: .7em .5em;
+    border-radius: 1rem;
+    border: solid #5f5e5e85;
+}
+
+.sidebar-wel {
+    font-size: 1.3em;
+    padding-left: 2%;
+    padding-top: 3em;
+}
+.sidebar-name {
+    font-size: 2em;
+    border-bottom: 2px solid rgba(46, 121, 186, 1);;
+    margin-bottom: 1em;
+    padding-left: 2%;
+
+}

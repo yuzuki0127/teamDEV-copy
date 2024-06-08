@@ -1,0 +1,126 @@
+@media (max-width: 768px) {
+
+    .header {
+        height: 4rem;
+    }
+
+    .header-title{
+        text-align: center;
+    }
+    .header-company{
+        font-size: 300%;
+        text-align: start;
+        padding-left: 1em;
+        text-shadow: 1px 2px 3px black;
+        display: flex;
+    }
+    .header-logo{
+        display: none;
+    }
+    
+    .company-logo{
+        display: flex;
+    }
+    
+    .header-logo-img{
+        width:13rem
+    }
+    
+    .header-button {
+        display: block;
+        width: 2em;
+        height: 2em;
+        position: relative;
+        margin-left: auto;
+        z-index: 1;
+      }
+    .header-buttonLine {
+        display: block;
+        color:#fff;
+        width: 2rem;
+        height: 0.05rem;
+        position: absolute;
+        border-top: solid 2px;
+        left: 50%;
+        transform: translate(-50%);
+      }
+      
+      .header-buttonLine:nth-of-type(1) {
+        top: 13px;
+      }
+      
+      .header-buttonLine:nth-of-type(2) {
+        top: 20px;
+      }
+      
+      .header-buttonLine:nth-of-type(3) {
+        top: 27px;
+      }
+      .header-nav {
+        position: fixed;
+        inset: 0;
+        background-color: #f7f9fb;
+        visibility: hidden;
+        opacity: 0;
+        flex-direction: column;
+        gap: 0;
+        padding: 120px 24px 40px;
+        transition: visibility .3s linear , opacity .3s linear;
+    }
+    .header.is-open .header-buttonLine:nth-of-type(1) {
+        top: 20px;
+        transform: translate(50%);
+        transform: rotate(45deg);
+        color: #3692D5;
+      }
+      
+      .header.is-open .header-buttonLine:nth-of-type(2) {
+        opacity: 0;
+      }
+      
+      .header.is-open .header-nav {
+        visibility: visible;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 5em;
+      }
+      .header.is-open .header-nav-list {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+      }
+      .header.is-open .header-list {
+        color: black;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .header.is-open .header-inquiry {
+        color: black;
+      }
+
+    
+      .header.is-open .header-buttonLine:nth-of-type(3) {
+        top: 20px;
+        transform: translate(-50%);
+        transform: rotate(-45deg);
+        color: #3692D5;
+      }
+
+    .header-nav-list{
+        padding-left: 10%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-list{
+        padding-right: 8rem;
+        font-size: 1rem;
+        color: #fff;
+    }
+    .header-inquiry{
+        text-align: center;
+        color: #fff;
+        font-size: 1rem;
+    }
+}

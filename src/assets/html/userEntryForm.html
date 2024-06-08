@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ユーザー応募フォーム</title>
+        <link rel="stylesheet" href="../style/reset.css" />
+        <link rel="stylesheet" href="../style/header.css">
+        <link rel="stylesheet" href="../style/sp/style.css">
+        <link rel="stylesheet" href="../style/userEntryForm.css">
+        <link rel="stylesheet" href="../../../node_modules/@splidejs/splide/dist/css/splide.min.css">
+        <script src="../script/script.js" defer></script>
+        <script src="../../../node_modules/@splidejs/splide/dist/js/splide.min.js" defer></script>
+    </head>
+
+    <body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-box">
+            <div class="header-title">
+                <!-- <div></div> -->
+                <div class="header-company">CRAFT</div>
+            </div>
+            <figure class="header-logo">
+                <img src="./assets/img/boozer_logo-black.png.png" alt="" class="header-logo-img">
+            </figure>
+        </div>
+        <div class="header-nav">
+            <div class="">
+                <nav class="header-nav-box">
+                    <ul class="header-nav-list">
+                        <li class="header-list"><a href="">craftとは</a></li>
+                        <li class="header-list"><a href="">就活支援</a></li>
+                        <li class="header-list"><a href="">業界研究</a></li>
+                        <li class="header-list"><a href="">就活エージェンシー比較</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-inquiry">
+                <nav>
+                    <div>お問い合わせ</div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="user-entry">
+            <div class="user-entryContainer">
+                <div class="user-entryTitle">
+                    <p>応募フォーム</p>
+                </div>
+                <div class="user-entryForm">
+                    <div class="user-entryFormContainer">
+                        <div class="user-entryFormInner">
+                    <label class="user-entryFormText">名前</label>
+                    <input type="text" name="name" class="user-entryFormInput user-entryFormName">
+                </div>
+                <div class="user-entryFormInner">
+                    <label>性別</label>
+                    <div class="user-entryFormGenderContainer">
+                    <input type="radio"  name="gender" value="1" class="user-entryFormInput user-entryFormRadio1">男
+                    <input type="radio"  name="gender" value="2" class="user-entryFormInput user-entryFormRadio1">女
+                </div>
+            </div>
+            <div class="user-entryFormInner">
+                <label>文理</label>
+                <div class="user-entryFormContextOfUseContainer">
+                    <div><input type="radio"  name="contextOfUse" value="1" class="user-entryFormInput user-entryFormRadio2">文系</div>
+                    <div><input type="radio"  name="contextOfUse" value="2" class="user-entryFormInput user-entryFormRadio2">理系</div>
+                </div>
+                </div>
+                <div class="user-entryFormInner">
+                    <label>卒業年度</label>
+                    <input type="number"name="graduateYear" class="user-entryFormInput user-entryFormGraduate">
+                    </div>
+                    <div class="user-entryFormInner">
+                    <label>大学</label>
+                    <input type="text" name="university" class="user-entryFormInput user-entryFormUniversity">
+                    </div>
+                    <div class="user-entryFormInner">
+                    <label>学部</label>
+                    <input type="text" name="faculty" class="user-entryFormInput user-entryFormFaculty">
+                    </div>
+                    <div class="user-entryFormInner">
+                    <label>メールアドレス</label>
+                    <input type="email" name="email" class="user-entryFormInput user-entryFormEmail">
+                    </div>
+                    <div class="user-entryFormInner">
+                    <label>電話番号</label>
+                    <input type="tel" name="phoneNumber" class="user-entryFormInput user-entryFormPhoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </div>
+                    <div class="user-entryFormInner">
+                    <label>備考</label>
+                    <input type="text" name="free" class="user-entryFormInput user-entryFormFree">
+                </div>
+            </div>
+        </div>
+        <div class="user-entryFormSubmit1">
+                <div class="user-entryFormSubmit">
+                    <button class="user-entryFormSubmitButton">送信</button>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+</body>

@@ -1,0 +1,16 @@
+{
+  "name": "teamdev-2024-posse3-team4a",
+  "version": "1.0.0",
+  "description": "//init.sqlの更新方法 docker compose exec db sh mysql -u root -pcitron citron < /docker-entrypoint-initdb.d/init.sql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "sweetalert2": "^11.10.7"
+  }
+}

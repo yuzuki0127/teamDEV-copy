@@ -1,0 +1,102 @@
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.login-title{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.craft-signup-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    margin-top: 50px;
+}
+
+
+.craft-regiContainer{
+
+}
+
+.craftSignup-title{
+    font-size: 2rem;
+}
+
+
+
+.container{
+    margin-top: 8rem;
+    display: flex;
+    
+}
+.box-signup{
+    padding-top: 1rem;
+}
+.form-control{
+    width: 15rem;
+    height: 2rem;
+    margin-top: 2rem;
+    border: .05rem solid black;
+    padding-left: .5rem;
+}
+/* .agencyLogin-form{
+    padding-top: 170px;
+} */
+.btn{
+    /* padding-top: 20px; */
+    width: 7rem;
+    height: 2rem;
+    align-items: center;
+}
+.btn-container{
+display: grid;
+justify-content: center;
+/* align-content: center; */
+margin-top: 2rem;
+}
+/* .agencyLogin-signUp{
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.agencyLogin-signUp-box{
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+} */
+
+.signup-lead{
+    padding-top: 10 px;
+    margin-top: 10px;
+}
+
+.lead-box{
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.craftSignup-submit{
+    margin-top: 1em;
+    padding: .5em .7em;
+    background-color: #3692D5;
+    color: #fff;
+    border-radius: .5em;
+    font-size: 1.2em;
+}
+
+.craft-regiFormSubmit{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.craft-loginLead{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    text-decoration: underline;
+}

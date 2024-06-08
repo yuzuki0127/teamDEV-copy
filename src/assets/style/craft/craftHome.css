@@ -1,0 +1,201 @@
+/* ゆづき */
+main {
+    display: grid;
+    grid-template-columns: 1.7fr 8.3fr;
+    background-color: #f5f5f5;
+    gap: 2em;
+    margin-top: 6rem;
+}
+/* エージェンシー情報全体 */
+/* .agency-check {
+    display: grid;
+    grid-template-columns: 15% 85%;
+} */
+.agency-inner {
+    width: 90%;
+}
+.agency-checkList {
+    display: grid;
+    grid-template-rows: 20% 80%;
+    margin-top: 3em;
+}
+.number-title {
+    font-size: 1.7em;
+}
+.number-people {
+    font-size: 2em;
+    color: #FA9F31;
+}
+.number-agency {
+    font-size: 2em;
+    color: #45A66C;
+}
+
+/* 累計数確認 */
+.agency-number {
+    /* margin-left: 3.15%; */
+    margin-top: 2em;
+    background-color: #fff;
+    padding: 2em;
+    line-height: 1.5;
+    border-radius: .5rem;
+}
+.agency-numberList {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/* 新規認証 */
+.new-possibleTitle {
+    font-size: 2em;
+    border-bottom: solid black .1em;
+    display: inline;
+}
+.new-possible {
+    /* margin-left: 5%; */
+    padding: 3% 5% 5% 5%;
+    background-color: #fff;
+    width: 100%;
+    margin-top: 3em;
+    border-radius: .5rem;
+}
+
+/* エージェンシー情報アイテム */
+.agency-infoList{
+    order: 2;
+    z-index: 0;
+}
+.agency-infoItem {
+    background-color: #fff;
+    width: 65%;
+    margin: 5em 17.5% 0 17.5%;
+    border-radius: 1em;
+    padding: 3% 2% 2% 4%;
+    border-top: .5em #3692D5 solid;
+    border-bottom: 5em solid rgba(250, 159, 49, 0.4);
+    position: relative;
+    box-shadow: .3em .3em .5em gray;
+    z-index: 0;
+    /* box-shadow: 0px 8px 16px -2px rgba(10, 10, 10, 0.1),
+    5px 5px 20px 13px rgba(10, 10, 10, 0.02); */
+}
+
+.agency-easyDesc {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+}
+.agency-infoImg {
+    box-shadow: .2em .2em .3em lightgray;
+    border-radius: .6em;
+    overflow: hidden;
+    margin-bottom: .3em;
+    height: 15em;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+}
+.agency-descItem {
+    padding-top: 5%;
+}
+
+.agency-Name {
+    font-size: 1.7rem;
+    padding-left: 10%;
+    text-shadow: .08em .1em .1em lightgray;
+}
+.agency-firstDesc {
+    font-size: 1.7rem;
+    font-weight: bolder;
+    padding-top: .7em;
+    text-align: center;
+}
+.agency-infoButton {
+    display: flex;
+    justify-content: end;
+    margin-right: .5em;
+}
+.agency-infoBtn {
+    color: #fff;
+    font-size: 1.2rem;
+    background-color: #45A66C;
+    border-radius: .8em;
+    padding: .3em 1.2em;
+    box-shadow: .1em .12em .1em rgb(182, 182, 182);
+    text-shadow: .08em .1em .1em gray;
+}
+
+.agency-featureList {
+    margin-top: .8em;
+    margin-bottom: 1.3em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+.agency-featureItem {
+    border: .1em solid #3692D5;
+    border-radius: 1.3em;
+    padding: .3em .9em;
+    box-shadow: .08em .1em .1em rgb(182, 182, 182);
+}
+.agency-5stepList {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 27% 1fr;
+}
+.agency-5stepItem {
+    display: grid;
+    grid-template-columns: 25% 1fr 25%;
+}
+.agency-5stepDesc {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.agency-selectButton {
+    position: absolute;
+    right: 5%;
+    bottom: -12%;
+    display: flex;
+    gap: 5em;
+}
+.agency-selectButton.popup-opened{
+    bottom: -8%;
+}
+.agency-rejectBtn {
+    color: #fff;
+    font-size: 1.3rem;
+    background-color: rgba(183, 1, 1, 0.694);
+    border-radius: .8em;
+    padding: .5em 1em;
+    box-shadow: .1em .15em .1em gray;
+    text-shadow: .08em .1em .1em gray;
+}
+.agency-approvalBtn {
+    color: #fff;
+    font-size: 1.3rem;
+    background-color: #3692D5;
+    border-radius: .8em;
+    padding: .5em 1em;
+    box-shadow: .1em .15em .1em gray;
+    text-shadow: .08em .1em .1em gray;
+}
+
+/* 最近編集したエージェンシー */
+.edited-agency {
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: .5rem;
+}
+.edited-possibleTitle {
+    font-size: 1.7em;
+    border-bottom: solid black .1em;
+    display: inline;
+}
+.edited-agencyList {
+    padding: 1.5em;
+}
+.edited-agencyItem {
+    font-size: 1.5em;
+    padding-top: 1em;
+}

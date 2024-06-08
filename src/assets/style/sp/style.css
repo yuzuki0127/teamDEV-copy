@@ -1,0 +1,96 @@
+@media (max-width: 768px) {
+    /* ゆづき */
+    /* 全体要素 */
+    body {
+        font-size: 0.6rem;
+    }
+    /* スライド */
+    .hero-section {
+        text-align: center;
+        margin-top: 4rem;
+        margin-left: 0;
+    }
+    .hero-pc {
+        display: none;
+    }
+    .hero-sp {
+        display: block;
+    }
+    .hero-infoBtn {
+        right: 8%;
+        bottom: 5%;
+        font-size: .8rem;
+    }
+    .hero-newList {
+        font-size: 1rem;
+    }
+    .hero-newItem {
+        text-align: start;
+    }
+
+    .splide__arrow--prev::before {
+        /* transform: translateX(50%); */
+    }
+      /* 次の矢印 */
+    .splide__arrow--next::before {
+        transform: scaleX(-1) translateX(80%);
+    }
+    /* エージェンシー情報全体 */
+    .agency-info {
+        display: block;
+    }
+    /* 絞り込み */
+    .narrow-set {
+        order: 1;
+    }
+    .narrow-info {
+        background-color: transparent;
+        box-shadow: 0 0 0 #fff;
+        border-radius: 0;
+    }
+    .narrow-fig {
+        font-size: 2em;
+    }
+    .narrow-figure{
+        border-bottom: 1px solid black;
+        font-size: 3em;
+    }
+    .narrow-searchCon {
+        text-align: start;
+        padding-top: 1em;
+    }
+    .narrowList {
+        width: 100%;
+    }
+    .narrow-Item {
+        font-size: 1.2em;
+    }
+    .narrow-search {
+        font-size: 1.3em;
+    }
+    /* エージェンシー情報アイテム */
+    .agency-infoList {
+        order: 2;
+    }
+    .agency-infoItem {
+        width: 80%;
+        margin: 5% auto 5% auto;
+    }
+    .agency-Name {
+        font-size: 1.2rem;
+    }
+    .agency-firstDesc {
+        font-size: 1.2rem;
+    }
+    .agency-infoBtn {
+        font-size: .8rem;
+    }
+    .agency-keepButton {
+        right: 5%;
+        bottom: -13.5%;
+    }
+    .agency-keepBtn {
+        font-size: .8rem;
+        padding: .5em;
+    }
+}

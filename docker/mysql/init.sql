@@ -109,9 +109,9 @@ INSERT INTO user (agency_id, user_id) VALUES
 (1, 3);
 
 INSERT INTO user_info (name, sex, graduate_year, university, selection, faculty, email, phone, supplement) VALUES
-('船本雄月', 0, 2027, '明治大学', 1, '商', 'funamoto@gmail.com', '123-4567-8901', 'IT業界に興味があります'),
-('荒谷英里', 1, 2027, '明治大学', 1, '商', 'aratani@gmail.com', '234-5678-9012', '商社に興味があります'),
-('伊東柚衣', 1, 2027, '明治大学', 1, '情報コミュニケーション', 'itou@gmail.com', '345-6789-0123', '福祉に興味があります');
+('田中太郎', 0, 2027, '明治大学', 1, '商', 'tarou@gmail.com', '123-4567-8901', 'IT業界に興味があります'),
+('田中花子', 1, 2027, '青山学院大学', 1, '商', 'hanako@gmail.com', '234-5678-9012', '商社に興味があります'),
+('田中姫子', 1, 2027, '慶應義塾大学', 0, '理工', 'himeko@gmail.com', '345-6789-0123', '福祉に興味があります');
 
 INSERT INTO feature (agency_id, feature_id, status) VALUES
 (1, 1, 1),
